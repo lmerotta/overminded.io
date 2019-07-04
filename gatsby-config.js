@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog Starter`,
-    description: `A Blog starter`,
-    author: `Boy with Silver Wings`,
-    authorTagline: 'Engineer. Driven by Passion',
+    title: `Overminded`,
+    description: `Personal thoughts of an overloaded mind.`,
+    author: `Lucio Merotta`,
+    authorTagline: 'Web developer. ReactJS praiser. Music addict.',
     social: {
-      twitter: `agneymenon`,
+      twitter: `LucioMerotta`,
     },
   },
   plugins: [
@@ -28,6 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        excerpt: true,
         plugins: [
           {
             resolve: `gatsby-remark-images`,

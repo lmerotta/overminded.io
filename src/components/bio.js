@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';
+//import Image from 'gatsby-image';
 
 import media from '../utils/media';
 import Twitter from '../images/social/twitter.svg';
@@ -24,11 +24,11 @@ const TextContainer = styled.div`
   `}
 `;
 
-const ImageContainer = styled.div`
+/*const ImageContainer = styled.div`
   ${media.phone`
     order: 1;
   `}
-`;
+`;*/
 
 const Name = styled.h3`
   font-size: 2.4rem;
@@ -72,9 +72,9 @@ const Bio = () => (
               <TwitterIcon src={Twitter} alt="twitter" />
             </a>
           </TextContainer>
-          <ImageContainer>
+          {/*<ImageContainer>
             <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
-          </ImageContainer>
+          </ImageContainer>*/}
         </Container>
       );
     }}
